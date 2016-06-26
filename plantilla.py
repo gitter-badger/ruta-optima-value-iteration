@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # Ronny Conde at Monkey from the Future
 
-def posibles_desplazamiento(accion):
+def posibles_desplazamientos(accion):
     """ Devuelve una lista de tuplas con los posibles desplazamientos y su
     probabilidad tras seleccionar accion.
     
