@@ -4,7 +4,7 @@
 
 def posibles_desplazamientos(accion):
     """ Devuelve una lista de tuplas con los posibles desplazamientos y su
-    probabilidad tras seleccionar accion.
+    probabilidad tras seleccionar accion (En esta funcion no puede ser 'EXIT'). 
     
     E.g. posibles_desplazamientos('W') devolvera [('W', 0.8), ('N', 0.1), ('S',
     0.1)]
@@ -18,13 +18,14 @@ def siguiente_estado(estado, desplazamiento):
     posibles_desplazamientos(accion). Hay que tener en cuenta el comportamiento
     ante los obstaculos y limites del laberinto.
     
-    E.g. siguiente_estado((0, 1), 'E') puede devolver (0, 2)
+    E.g. siguiente_estado((0, 1), 'E') devolvera (0, 2)
     """
     pass
 
 def posibles_transiciones(estado, accion):
     """ Devuelve una lista de tuplas con los posibles estados tras seleccionar
-    accion desde estado y sus probabilidades correspondientes.
+    accion desde estado y sus probabilidades correspondientes. Si la accion es
+    'EXIT' devolvera [(None, 1.0)].
     
     E.g. posibles_transiciones((0,0), 'W') devolvera [((0,0), 0.9), ((1,0),
     0.1)]
@@ -74,7 +75,7 @@ def main():
     # - Claves. Tuplas con la combinacion de cada estado y sus acciones disponibles.
     # - Valores. Lista de tuplas con los posibles estados resultantes tras
     # seleccionar accion desde estado y sus probabilidades asociadas (salida de la
-    # funcion transiciones). (estado, accion) es la clave asociada.
+    # funcion posibles_transiciones). (estado, accion) es la clave asociada.
     # E.g. dicc_transiciones se inicializara como {((0,0), 'W'): [((0,0), 0.9),
     # ((1,0), 0.1)], ... }
 
