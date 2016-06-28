@@ -1,4 +1,6 @@
 # Planificación de la Ruta Óptima en un Laberinto con Value Iteration.
+
+[![Join the chat at https://gitter.im/monkey-from-the-future/ruta-optima-value-iteration](https://badges.gitter.im/monkey-from-the-future/ruta-optima-value-iteration.svg)](https://gitter.im/monkey-from-the-future/ruta-optima-value-iteration?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 **Desafío Id #1**
 ## Etiquetas
 Reinforcement Learning, Espacio de los Estados Discreto, Espacio de las Acciones Discreto, Modelo Conocido, Dynamic Programming, Value Iteration, Planificación.
